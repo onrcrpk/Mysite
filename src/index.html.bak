@@ -1,14 +1,4 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobidev/simplefolio/
-  Readme: https://github.com/cobidev/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
+
 <!DOCTYPE html>
 <html lang="en" class="sr">
   <head>
@@ -17,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-    <!-- Todo: put here your site title -->
+    
     <title>Onur</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
     <link
       rel="stylesheet"
@@ -83,16 +74,46 @@
               <p class="about-wrapper__info-text">
                 Want to see my resume?
               </p>
-              <span class="d-flex mt-3">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
-                >
-                  View Resume
-                </a>
-              </span>
+			  
+			  
+			     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
+    <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
+        rel="stylesheet" type="text/css" />
+    
+	
+	<script type="text/javascript">
+        $(function () {
+            var fileName = "resume.pdf";
+            $("#btnShow").click(function () {
+                $("#dialog").dialog({
+                    modal: true,
+                    title: fileName,
+                    width: 540,
+                    height: 850,
+                    buttons: {
+                        Close: function () {
+                            $(this).dialog('close');
+                        }
+                    },
+                    open: function () {
+                        var object = "<object data=\"{FileName}\" type=\"application/pdf\" width=\"500px\" height=\"800px\">";
+                        object += "If you are unable to view file, you can download from <a href=\"{FileName}\">here</a>";
+                        object += " or download <a target = \"_blank\" href = \"http://get.adobe.com/reader/\">Adobe PDF Reader</a> to view the file.";
+                        object += "</object>";
+                        object = object.replace(/{FileName}/g, "assets/" + fileName);
+                        $("#dialog").html(object);
+                    }
+                });
+            });
+        });
+    </script>
+    <input id="btnShow" type="button" value="Show PDF" />
+    <div id="dialog" style="display: none">
+    </div>
+			  
+			  
+			 
             </div>
           </div>
         </div>
@@ -232,7 +253,7 @@ Maps come into action as soon as location is involved. However, to visualize cha
 
         <hr />
 
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+        
         <p class="footer__text">
           © 2022 -
           <a rel="noreferrer" target="_blank"
