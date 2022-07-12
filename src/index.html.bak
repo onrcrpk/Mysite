@@ -159,7 +159,7 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">3D-Visualization</h3>
                 <div>
                   <p class="mb-4">
 Maps come into action as soon as location is involved. However, to visualize changes and the dynamics in our multi-dimensional society requires solutions beyond the standalone ’traditional’ 2D map. Not only interaction is required to view multi-dimensional objects from different angles or to move along the timeline to see change in action, but also options to see alternatives and to reason..<br>
@@ -171,7 +171,7 @@ Qgis2threejs QGIS plugging was used for this project
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://onrcrpk.github.io/3D-Visualization/"
                 >
                   See Live
                 </a>
@@ -179,7 +179,7 @@ Qgis2threejs QGIS plugging was used for this project
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href=""
                 >
                   Source Code
                 </a>
